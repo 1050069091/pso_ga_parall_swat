@@ -1,0 +1,27 @@
+!!!!!!!swat output file name
+output.rch
+!!!!!!!variable name in the swat output file
+FLOW_OUT
+!!!!!!!variable column number(s) in the swat output file		   
+7      
+
+!!!!!!!total number of HRUs in the project
+38
+!!!!!!!total number of reaches (subbasins) in the project
+20
+!!!!!!reach (subbasin) number for the variable (ordered)
+3
+
+!!!!!!beginning year of simulation not including the warm up period
+1990
+!!!!!!end year of simulation
+1995
+!!!!!!time step (1=monthly, 2=yearly)
+2
+
+
+
+
+
+
+// Remarks

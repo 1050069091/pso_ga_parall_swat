@@ -1,0 +1,102 @@
+subbasin       1     1     1                              Subbasin: 1
+          000010000.sub
+subbasin       1     2     2                              Subbasin: 2
+          000020000.sub
+subbasin       1     3     3                              Subbasin: 3
+          000030000.sub
+subbasin       1     4     4                              Subbasin: 4
+          000040000.sub
+subbasin       1     5     5                              Subbasin: 5
+          000050000.sub
+subbasin       1     6     6                              Subbasin: 6
+          000060000.sub
+subbasin       1     7     7                              Subbasin: 7
+          000070000.sub
+subbasin       1     8     8                              Subbasin: 8
+          000080000.sub
+subbasin       1     9     9                              Subbasin: 9
+          000090000.sub
+subbasin       1    10    10                              Subbasin: 10
+          000100000.sub
+subbasin       1    11    11                              Subbasin: 11
+          000110000.sub
+subbasin       1    12    12                              Subbasin: 12
+          000120000.sub
+subbasin       1    13    13                              Subbasin: 13
+          000130000.sub
+subbasin       1    14    14                              Subbasin: 14
+          000140000.sub
+subbasin       1    15    15                              Subbasin: 15
+          000150000.sub
+subbasin       1    16    16                              Subbasin: 16
+          000160000.sub
+subbasin       1    17    17                              Subbasin: 17
+          000170000.sub
+subbasin       1    18    18                              Subbasin: 18
+          000180000.sub
+subbasin       1    19    19                              Subbasin: 19
+          000190000.sub
+subbasin       1    20    20                              Subbasin: 20
+          000200000.sub
+route          2    21     1     1
+          000010000.rte000010000.swq
+add            5    22     4    21
+route          2    23     4    22
+          000040000.rte000040000.swq
+add            5    24     3    23
+route          2    25     5     5
+          000050000.rte000050000.swq
+add            5    26    24    25
+route          2    27     6     6
+          000060000.rte000060000.swq
+add            5    28    26    27
+route          2    29     9     9
+          000090000.rte000090000.swq
+add            5    30     7    29
+route          2    31    11    11
+          000110000.rte000110000.swq
+add            5    32    10    31
+route          2    33    12    12
+          000120000.rte000120000.swq
+add            5    34    32    33
+route          2    35    14    14
+          000140000.rte000140000.swq
+add            5    36    13    35
+route          2    37    16    16
+          000160000.rte000160000.swq
+add            5    38    15    37
+route          2    39    17    17
+          000170000.rte000170000.swq
+add            5    40    38    39
+route          2    41    15    40
+          000150000.rte000150000.swq
+add            5    42    36    41
+route          2    43    19    19
+          000190000.rte000190000.swq
+add            5    44    18    43
+route          2    45    20    20
+          000200000.rte000200000.swq
+add            5    46    44    45
+route          2    47    18    46
+          000180000.rte000180000.swq
+add            5    48    42    47
+route          2    49    13    48
+          000130000.rte000130000.swq
+add            5    50    34    49
+route          2    51    10    50
+          000100000.rte000100000.swq
+add            5    52     8    51
+route          2    53     8    52
+          000080000.rte000080000.swq
+add            5    54    30    53
+route          2    55     7    54
+          000070000.rte000070000.swq
+add            5    56    28    55
+route          2    57     3    56
+          000030000.rte000030000.swq
+add            5    58     2    57
+route          2    59     2    58
+          000020000.rte000020000.swq
+saveconc      14    59     1     0
+          watout.dat
+finish         0

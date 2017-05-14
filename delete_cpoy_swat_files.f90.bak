@@ -1,0 +1,38 @@
+subroutine delete_copy_swat_files(myid)
+use mymodule
+
+integer,intent(in) :: myid   !进程号
+character(len=5) :: str_myid
+integer :: iostat
+character(len=50) :: iomsg
+character(len=20) :: input_file_name
+
+call format_para_fn(5,myid,str_myid)
+
+! write(*,*) trim(shell_get_input_file_name)
+
+open(unit=myid,file='input_file_names'//str_myid//'.txt',status='old',action='read',iostat=iostat,iomsg=iomsg)
+if(iostat /= 0) then
+	write(*,*) iomsg
+	stop
+end if
+
+do
+	read(myid,*,iostat=iostat,iomsg=iomsg) input_file_name
+	if(iostat < 0) then
+		exit
+	end if
+	if(iostat > 0) then
+		write(*,*) trim(iomsg)
+		stop
+	end if
+	call system('rm -f '//trim(input_file_name)//'.'//trim(str_myid))
+end do
+
+close(myid)
+call system('rm -f input_file_names'//str_myid//'.txt')
+call system('rm -f `ls | grep "'//str_myid//'$"`')
+!write(*,*) 'rm -f `ls | grep "'//str_myid//'$"`'
+
+
+end subroutine delete_copy_swat_files
